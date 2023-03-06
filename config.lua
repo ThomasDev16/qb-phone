@@ -11,7 +11,7 @@ Config.BillingCommissions = { -- This is a percentage (0.10) == 10%
 }
 
 -- Web hook for camera ( NOT GO PRO )
-Config.Webhook = ''
+Config.Webhook = 'https://discord.com/api/webhooks/1079226416161370233/hSsGICHp4s9QjAn-yrCWmrL_jRd4AbGuYPFxONOto1k1fiUPda6BNazGMhH8zDY3PSqY'
 
 -- Item name for pings app ( Having a VPN sends an anonymous ping, else sends the players name)
 Config.VPNItem = 'vpn'
@@ -348,6 +348,18 @@ Config.PhoneApplications = {
         slot = 25,
         Alerts = 0,
     },
+    ["lawyers"] = {
+        app = "lawyers",
+        color = "#26d4ce",
+        color2 = "#26d4ce",
+        icon = "fas fa-briefcase",
+        tooltipText = "Services",
+        tooltipPos = "bottom",
+        job = false,
+        blockedjobs = {},
+        slot = 26,
+        Alerts = 0,
+    },
     ["meos"] = {
         app = "meos",
         color = "#004682",
@@ -356,7 +368,7 @@ Config.PhoneApplications = {
         tooltipText = "MDT",
         job = "police",
         blockedjobs = {},
-        slot = 26,
+        slot = 27,
         Alerts = 0,
     },
 }
