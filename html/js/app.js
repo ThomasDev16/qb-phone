@@ -167,6 +167,10 @@ $(document).on('click', '.phone-application', function(e){
                     $.post('https://qb-phone/GetInvoices', JSON.stringify({}), function(invoices){
                         QB.Phone.Functions.LoadBankInvoices(invoices);
                     });
+                } else if (PressedApplication == "lawyers") {
+                    $.post('https://qb-phone/GetCurrentLawyers', JSON.stringify({}), function(data){
+                        SetupLawyers(data);
+                    });
                 } else if (PressedApplication == "whatsapp") {
                     $.post('https://qb-phone/GetWhatsappChats', JSON.stringify({}), function(chats){
                         QB.Phone.Functions.LoadWhatsappChats(chats);
